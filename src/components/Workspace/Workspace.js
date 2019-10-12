@@ -16,7 +16,7 @@ function Workspace( { initialLoad, creating, createCustomer, currentCustomer, sa
           initialLoad
           ?
             <div>
-              <p> Please select a customer from the left. </p>
+              <p> Por favor selecciona producto. </p>
             </div>
           :
             currentCustomer
