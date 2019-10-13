@@ -27,7 +27,7 @@ class App extends Component {
   componentDidMount() {
     getCustomerList().then(list => {
       console.log(list);
-      console.log("POR AQUI");
+      console.log("Produco:");
       this.setState({customerList: list});
     })
   }
@@ -62,7 +62,7 @@ class App extends Component {
   selectCustomer(id) {
     getCustomer(id).then(response=> {
       console.log(response);
-      console.log("POR AQUI");
+      console.log("Produco:");
       if (this.state.initialLoad) {
         this.setState({
           currentCustomer: response,

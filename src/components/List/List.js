@@ -17,8 +17,8 @@ class List extends Component {
       <Customer
         key={ customer.id }
         id={ customer.id }
-        first={ customer.data.name }
-        last={ customer.data.SKUs }
+        name={ customer.data.name }
+        SKUs={ customer.data.SKUs }
         imagen={customer.data.fullImage}
         selectCustomer={selectCustomer}
       />

@@ -6,12 +6,12 @@ import Status from './Status/Status';
 import RepairLog from './RepairLog/RepairLog';
 import RemoveCustomer from './RemoveCustomer/RemoveCustomer';
 
-function Customer({ id, first, last, email, phone, status, log, saveEdit, removeCustomer }) {
+function Customer({ id, name, SKUs, colors, url, monto, log, saveEdit, removeCustomer }) {
 
     return (
       <div id="Customer__container">
-        <Information id={ id } first={ first } last={ last } email={ email } phone={ phone } saveEdit={saveEdit}/>
-        <Status id={ id } status={ status } saveEdit={saveEdit}/>
+        <Information id={ id } name={ name } SKUs={ SKUs } colors={ colors } url={ url } saveEdit={saveEdit}/>
+        <Status id={ id } monto={ monto } saveEdit={saveEdit}/>
         <RepairLog id={ id } log={ log } saveEdit={saveEdit}/>
         <RemoveCustomer id={ id } removeCustomer={removeCustomer}/>
       </div>

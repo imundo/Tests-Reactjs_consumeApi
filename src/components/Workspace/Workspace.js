@@ -22,11 +22,11 @@ function Workspace( { initialLoad, creating, createCustomer, currentCustomer, sa
             currentCustomer
             ?
               <Customer id={currentCustomer.id}
-                        first={currentCustomer.name}
-                        last={currentCustomer.SKUs}
-                        email={currentCustomer.colors}
-                        phone={currentCustomer.url}
-                        status={currentCustomer.monto}
+                        name={currentCustomer.name}
+                        SKUs={currentCustomer.SKUs}
+                        colors={currentCustomer.colors}
+                        url={currentCustomer.url}
+                        monto={currentCustomer.monto}
                         log={currentCustomer.fullImage}
                         saveEdit={saveEdit}
                         removeCustomer={removeCustomer}
